@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Build project with Maven
-        run: mvn -B package
+        run: mvn -B install package -DskipTests
          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
